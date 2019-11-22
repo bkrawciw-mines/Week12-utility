@@ -104,3 +104,18 @@ players = ["Mary", "Cody", "Joe", "Jill", "Xai", "Bodo"]
 players2 = ["Melvin", "Martian", "Baka", "Xai", "Cody"]           
 print("OUTPUT", Intersection(players, players2))
 '''
+
+#Not in
+def NotIn(listA, listB):
+    listC = []
+    for item in listA:
+        if not(item in listB):
+            listC.append(item)
+    return listC
+
+#NotIn test
+'''
+players = ["Mary", "Cody", "Joe", "Jill", "Xai", "Bodo"]
+players2 = ["Melvin", "Martian", "Baka", "Xai", "Cody"]           
+print("OUTPUT", NotIn(players2, players))
+'''
