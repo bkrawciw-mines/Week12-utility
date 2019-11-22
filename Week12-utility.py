@@ -33,3 +33,16 @@ def UpdateString(main_string, mod_string, i):
 '''
 UpdateString("Hello world", 'a', 3)
 '''
+
+#Find word count
+def FindWordCount(listy, string):
+    count = 0
+    for item in listy:
+        count += item.count(string)
+    return count
+
+#FindWordCount test
+'''
+lines = LoadFile('test.txt')
+PrintOutput(FindWordCount(lines, 'h'))
+'''
