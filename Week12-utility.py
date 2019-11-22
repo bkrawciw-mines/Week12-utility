@@ -46,3 +46,28 @@ def FindWordCount(listy, string):
 lines = LoadFile('test.txt')
 PrintOutput(FindWordCount(lines, 'h'))
 '''
+
+#Score Finder
+def ScoreFinder(players, scores, player):
+    #Makes names lowercase
+    for i in range(len(players)):
+        players[i] = players[i].lower()
+    l_player = player.lower()
+    
+    #Finding player
+    index = None
+    for i in range(len(players)):
+        if players[i] == l_player:
+            index = i
+    if index == None:
+        PrintOutput('player not found')
+    else:
+        PrintOutput(player.capitalize()+' got a score of '+str(scores[index]))
+
+#ScoreFinder test
+'''
+players = ["Mary", "Cody", "Joe", "Jill", "Xai", "Bodo"]
+scores = [5, 8, 10, 6, 10, 4]
+ScoreFinder(players, scores, "jill")
+ScoreFinder(players, scores, "Manuel")
+'''
