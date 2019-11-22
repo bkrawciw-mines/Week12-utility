@@ -71,3 +71,21 @@ scores = [5, 8, 10, 6, 10, 4]
 ScoreFinder(players, scores, "jill")
 ScoreFinder(players, scores, "Manuel")
 '''
+
+#Union
+def Union(listA, listB):
+    listC = []
+    for item in listA:
+        if item not in listC:
+            listC.append(item)
+    for item in listB:
+        if item not in listC:
+            listC.append(item)
+    return(listC)
+
+#Union test
+'''
+players2 = ["Melvin", "Martian", "Baka", "Xai", "Cody"]
+scores = [5, 8, 10, 6, 10, 4]
+PrintOutput(Union(scores, players2))
+'''
