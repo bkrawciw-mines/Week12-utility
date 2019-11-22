@@ -89,3 +89,18 @@ players2 = ["Melvin", "Martian", "Baka", "Xai", "Cody"]
 scores = [5, 8, 10, 6, 10, 4]
 PrintOutput(Union(scores, players2))
 '''
+
+#Intersection
+def Intersection(listA, listB):
+    listC = []
+    for item in listA:
+        if item in listB:
+            listC.append(item)
+    return listC
+            
+#Intersection test
+'''
+players = ["Mary", "Cody", "Joe", "Jill", "Xai", "Bodo"]
+players2 = ["Melvin", "Martian", "Baka", "Xai", "Cody"]           
+print("OUTPUT", Intersection(players, players2))
+'''
