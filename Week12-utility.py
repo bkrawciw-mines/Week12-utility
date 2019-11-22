@@ -23,3 +23,13 @@ def LoadFile(path):
 lines = LoadFile('test.txt')
 PrintOutput(lines)
 '''
+
+#Update string
+def UpdateString(main_string, mod_string, i):
+    newString = main_string[0:i]+mod_string+main_string[i+1:]
+    PrintOutput(newString)
+
+#UpdateString test
+'''
+UpdateString("Hello world", 'a', 3)
+'''
